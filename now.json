@@ -7,10 +7,9 @@
   ],
   "env": {
     "NODE_ENV": "production",
-    "MONGODB_CONNECTION": "@db-tfkcosmostest-connection-read",
-    "MONGODB_COLLECTION": "avtaler",
-    "MONGODB_NAME": "felles",
     "MOA_TENANT_ID": "@moa-tenant-id",
+    "AGREEMENT_SERVICE_URL": "",
+    "AGREEMENT_SERVICE_SECRET": "",
     "PAPERTRAIL_HOST": "@tfk-papertrail-host",
     "PAPERTRAIL_PORT": "@tfk-papertrail-port",
     "PAPERTRAIL_HOSTNAME": "elevpc"
