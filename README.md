@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.com/vtfk/ms-shared-api-avtaler-student.svg?branch=master)](https://travis-ci.com/vtfk/ms-shared-api-avtaler-student)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+
 # ms-shared-api-avtaler-student
 
 API for student to see own agreements
@@ -98,7 +101,6 @@ You'll need the [now-cli](https://zeit.co/now) installed
 
 ```
 NODE_ENV=development
-JWT_SECRET=your-jwt-api-secret
 MOA_TENANT_ID=your-moa-tenant-id
 AGREEMENT_SERVICE_URL=url-for-agreement-service
 AGREEMENT_SERVICE_SECRET=jwt-secret-for-argreement-service
