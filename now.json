@@ -31,7 +31,14 @@
       "dest": "/static/favicon.ico"
     },
     { "src": "/agreements/myagreements", 
-      "dest": "/api/my-agreements.js" 
+      "dest": "/api/my-agreements.js",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+        "Access-Control-Allow-Methods": "GET, OPTIONS",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Max-Age": "3600"
+      }
     },
     { "src": "/(.*)",
       "dest": "/README.html"
