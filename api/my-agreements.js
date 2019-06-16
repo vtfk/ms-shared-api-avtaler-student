@@ -2,6 +2,7 @@ const { send } = require('micro')
 const withTokenAuth = require('../lib/token-auth')
 const getUid = require('../lib/get-uid-from-upn')
 const getAgreements = require('../lib/get-agreements')
+const anonymize = require('../lib/anonymize-uid')
 const logger = require('../lib/logger')
 
 const getMyAgreements = async (request, response) => {
@@ -9,7 +10,7 @@ const getMyAgreements = async (request, response) => {
   logger('info', ['my-agreements', 'getMyAgreements', 'upn', upn])
   const uid = await getUid(upn)
   if (uid) {
-    logger('info', ['my-agreements', 'getMyAgreements', 'upn', upn, 'uid', uid])
+    logger('info', ['my-agreements', 'getMyAgreements', 'upn', upn, 'uid', anonymize(uid)])
     const agreements = await getAgreements(uid)
     send(response, 200, agreements)
   } else {
