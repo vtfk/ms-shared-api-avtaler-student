@@ -10,6 +10,8 @@
     "MOA_TENANT_ID": "@moa-tenant-id",
     "AGREEMENT_SERVICE_URL": "@agreement-service-search-url",
     "AGREEMENT_SERVICE_SECRET": "@agreement-service-secret",
+    "IDENTITY_SERVICE_URL": "@identity-service-upn-url",
+    "IDENTITY_SERVICE_SECRET": "@identity-service-secret",
     "PAPERTRAIL_HOST": "@tfk-papertrail-host",
     "PAPERTRAIL_PORT": "@tfk-papertrail-port",
     "PAPERTRAIL_HOSTNAME": "elevpc"

@@ -121,6 +121,10 @@ Run the deploy script.
 $ npm run deploy
 ```
 
+## Related
+
+[ms-shared-api-avtaler](https://github.com/vtfk/ms-shared-api-avtaler) - microservice for agreements
+
 ## License
 
 [MIT](LICENSE)
