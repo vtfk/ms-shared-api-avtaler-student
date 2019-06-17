@@ -30,8 +30,9 @@
     { "src": "/favicon.ico",
       "dest": "/static/favicon.ico"
     },
-    { "src": "/agreements/myagreements", 
-      "dest": "/api/my-agreements.js",
+    {
+      "src": "/(.*)",
+      "continue": true,
       "headers": {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization",
@@ -39,6 +40,15 @@
         "Access-Control-Allow-Credentials": "true",
         "Access-Control-Max-Age": "3600"
       }
+    },
+    {
+      "src": "/(.*)",
+      "status": 200,
+      "methods": ["OPTIONS"]
+    },
+    { "src": "/agreements/myagreements", 
+      "dest": "/api/my-agreements.js",
+      "methods": ["GET"]
     },
     { "src": "/(.*)",
       "dest": "/README.html"
