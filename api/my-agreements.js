@@ -1,4 +1,3 @@
-const { send } = require('micro')
 const withTokenAuth = require('../lib/token-auth')
 const getUid = require('../lib/get-uid-from-upn')
 const getAgreements = require('../lib/get-agreements')
@@ -12,10 +11,10 @@ const getMyAgreements = async (request, response) => {
   if (uid) {
     logger('info', ['my-agreements', 'getMyAgreements', 'upn', upn, 'uid', anonymize(uid)])
     const agreements = await getAgreements(uid)
-    send(response, 200, agreements)
+    response.json(agreements)
   } else {
     logger('warn', ['my-agreements', 'getMyAgreements', 'upn', upn, 'missing uid'])
-    send(response, 200, [])
+    response.json([])
   }
 }
 
