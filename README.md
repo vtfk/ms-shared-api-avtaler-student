@@ -20,6 +20,11 @@ Get all agreements for logged in user as an array
     fid: "9b064152-5a50-4c3b-bc97-5c8edd87c3c1",
     type: "elevpc",
     partOf: "",
+    isDummy: '',
+    isManual: '',
+    canBeDigital: ''
+    created: '',
+    updated: '',
     signedByService: true,
     history: [
       {
@@ -44,6 +49,11 @@ Get all agreements for logged in user as an array
         fid: "503ee569-a480-43d8-96d8-e61cf38c5ed7",
         type: "elevpc",
         partOf: "5514ec16-59bf-4009-bd5d-452c57144a17",
+        isDummy: '',
+        isManual: '',
+        canBeDigital: '',
+        created: '',
+        updated: '',
         history: [
           {
             timeStamp: 1560145977956,
@@ -62,6 +72,11 @@ Get all agreements for logged in user as an array
         fid: "1cb89b34-e95c-426b-a500-35a759f82b04",
         type: "elevpc",
         partOf: "5514ec16-59bf-4009-bd5d-452c57144a17",
+        isDummy: '',
+        isManual: '',
+        canBeDigital: '',
+        created: '',
+        updated: '',
         signedByAdmin: {
           signee: {
             uid: "1234467585866",
